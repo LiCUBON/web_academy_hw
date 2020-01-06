@@ -1,0 +1,164 @@
+.backgroundImg
+{
+    background-image: url(img/backgrou.png);
+    width: 449px;
+}
+.modBackground
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.856);
+    width: 449px;
+    height: 431px;
+}
+.modalka
+{
+    position: relative;
+    background-color: white;
+    width: 397px;
+    height: 329px;
+    border-radius: 5px;
+}
+.userLog  
+{
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 60px;
+    width: 400px;
+}
+.testLog
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.iconX
+{
+    position: relative;
+    font-size: 10px;
+    font-family: cursive;
+    bottom: 2px;
+    padding: 1px;
+}
+p
+{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(131, 131, 131, 0.432);
+}
+input
+{
+    margin: 7px;
+    width: 260px;
+    height: 22px;
+    border-radius: 4px;
+    border-color: #373737;
+    border-style: solid;
+}
+div > button
+{
+    margin-top: 12px;
+    height: 30px;
+    background-color: #373737;
+    color: #fff;
+    border-color: #373737;
+    border-radius: 4px;
+    text-align: center;
+}
+.but1
+{
+    width: 171px;
+    margin-right: 15px;
+}
+.but2
+{
+  width: 80px;  
+}
+button:hover
+{
+ background-color: rgb(205, 205, 205);
+ border-color: rgb(205, 205, 205);
+}
+.close {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 26px;
+    height: 20px;
+    opacity: 0.3;
+    }
+.close:hover {
+    opacity: 1;
+    }
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 17px;
+    width: 2px;
+    background-color: #333;
+    }
+.close:before {
+    transform: rotate(45deg);
+    }
+.close:after {
+    transform: rotate(-45deg);
+    }
+
+    .dropDM
+    {
+        
+        width: 199px;
+        height: 35px;
+    }
+    .dropDM > span
+    {
+        padding: 8px;
+        border-radius: 4px;
+        background-color: #1C4B71;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        font-size: 15px;
+        position: relative;
+        top: 5px;
+        color: #fff;
+        text-align: center;
+        margin: 10px;
+    }
+    .dropDM > span:hover{
+        background-color: rgb(15, 49, 77);
+    
+    }
+    .selectProff
+    {
+        display: none;
+        position: relative;
+        left: 14px;
+        top: 17px;
+        width: 153px;
+        box-shadow: 0px 0px 11px 0px;
+        border-radius: 3px;
+        
+    }
+    
+    .selectProff > a
+    {
+        padding: 5px;
+        text-indent: 14px;
+        text-decoration: none;
+        color: rgba(107, 107, 107, 0.774);
+        display: block;
+    }
+    .selectProff > a:hover
+    {
+        background-color: rgba(128, 128, 128, 0.548);
+    }
+    
+    .dropDM:hover .selectProff
+    {
+       display: block;
+    }
+    

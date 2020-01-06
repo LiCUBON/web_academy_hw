@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>From</title>
+    <style>
+        .test{
+            clear:both; text-align:right; line-height:30px;
+        }
+       .labl{
+        float:left;
+        padding-right:10px;
+       }
+       fieldset{
+        padding-right: 140px;
+       }
+        #UserComment{
+            margin-left: 154px;
+        }
+        .zoo{
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <p style="font-size: 40px; margin: 10px;">4.Форма</p>
+    <p style="font-size: 35px; margin-bottom: 0px;">Форма заявки на роботу в зоопарке</p>
+    <p><i>Пожалуста, заполните форму. Обязательные поля помечены<span style="color: #e04040;">*</span></i></p>
+    <div style="width: 550px;">
+    <from>
+        <fieldset style="padding-right: 140px;">
+            <legend>Контактная информация</legend>
+            <div class="test"><lable class="labl" for="UserName">Имя<span style="color: #e04040;">*</span></lable class="labl">
+            <input type="text" id="UserName"></div>
+            <div class="test"><lable class="labl" for="UserPhone">Телефон</lable>
+            <input type="text" id="UserPhone"></div>
+            <div class="test"><lable class="labl" for="UserEmail">Email<span style="color: #e04040;">*</span></lable>
+            <input type="email" id="UserEmail"></div>
+        </fieldset>
+        <fieldset>
+            <legend>Персональная Информация</legend>
+            <div class="test"><label class="labl" for="UserAge">Возраст<span style="color: #e04040;">*</span></label>
+            <input type="number" id="UserAge"></div>
+            <div class="test"><lable class="labl" >Пол</lable>
+                <select name="gender" style="width: 147px;">
+                    <option value="female">Женщина</option>
+                    <option value="male">Мужчина</option>
+                </select>
+                </div>
+                <div style="display: flex;">
+                    <p>Перечислите<br> личные<br> качества</p><textarea name="text" id="UserComment" cols="15" rows="5"></textarea></div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+            <input class="zoo" type="checkbox" id=zebra value="zebra"><label for="zebra">Зебра</label>
+            <input class="zoo" type="checkbox" id=cat value="cat"><label for="cat">Кошак</label>
+            <input class="zoo" type="checkbox" id=anaconda value="anaconda"><label for="anaconda">Анаконда</label>
+            <input class="zoo" type="checkbox" id=man value="man"><label for="man">Человек</label><br>
+            <input class="zoo" type="checkbox" id=elephant value="elephant"><label for="elephant">Слон</label>
+            <input class="zoo" type="checkbox" id=antelope value="antelope"><label for="antelope">Антилопа</label>
+            <input class="zoo" type="checkbox" id=dove value="dove"><label for="dove">Голубь</label>
+            <input class="zoo" type="checkbox" id=crab value="crab"><label for="crab">Краб</label><br>
+        </fieldset>
+        <input style="margin-top: 15px;" type="submit" value="Отправить информацию">
+    </from>
+</div>
+
+<div style=" margin: 25px; width: 50px; outline: 1px solid #000; background-color: #9e9d9d">
+    <a href="index.html">HOME</a>
+    </div>
+</body>
+</html>
