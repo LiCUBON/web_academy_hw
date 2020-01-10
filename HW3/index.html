@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <style>
+        .menuBTN{
+            width: 120px;
+        }
+        .menuBTN > button
+        {
+            width: 120px;
+        }
+        a
+        {
+            display: block;
+            text-decoration: none;
+            color: grey;
+            padding: 3px;
+        }
+        a:hover
+        {
+            background-color: rgba(134, 130, 130, 0.541);
+        }
+        .menuHidden
+        {
+            border-radius: 4px;
+            box-shadow: 0px 0px 11px 0px;;
+            width: 150px;
+            display: none;
+        }
+        .menuBTN:hover .menuHidden
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menuBTN">
+   <button>Munu</button>
+   <div class="menuHidden">
+   <a href="input-animation.html">Input Animation</a>
+   <a href="side-bar-animation.html">Side bar animation</a>
+   <a href="tabs-animation.html">Tabs animation</a>
+</div>
+</div>
+</body>
+</html>

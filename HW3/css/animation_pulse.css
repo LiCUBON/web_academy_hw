@@ -1,0 +1,57 @@
+.butt {
+ border: none;
+ font-size: 14pt;
+ color: #B5B5B5;
+ text-decoration: none;
+ width: 250px;
+ height: 60px;
+ display: block;
+ text-align: center;
+ line-height: 60px;
+ font-family: Arial, sans-serif;
+ position: relative;
+ transition: .5s;
+ overflow: hidden;
+ user-select: none;
+}
+
+.pulse {
+ background-color: #B5B5B5;
+ border-radius: 50%;
+ animation: pulse 0.7s ease-out;
+ transform: scale(0);
+ position: absolute;
+}
+@keyframes pulse {
+ to {
+  transform: scale(2);
+  background-color: #fff;
+  opacity: 0;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

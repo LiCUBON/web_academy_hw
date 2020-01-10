@@ -1,0 +1,396 @@
+/* Home Work input animation */
+.container1
+{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    height: 64px;
+    width: 220px;
+    border-radius: 5%;
+}
+.spanWork
+{
+    display: flex;
+    font-size: 13pt;
+    
+}
+.hidenBorder{
+    
+    position: absolute;
+    top: 14px;
+    left: 23px;
+    width: 58px;
+    height: 3px;
+    background-color: #212121;
+    transform: scaleX(0);
+
+}
+.inputStyle
+{
+    border-radius: 4px;
+    background-color: #212121;
+    border: 1px solid #545454;
+    color: white;
+    height: 45px;
+    width: 200px;
+    text-indent: 10px;
+    font-size: 13pt;
+}
+
+.labelWork1
+{
+    cursor: text;
+    display: flex;
+    position: absolute;
+    color: #BBBBBB;
+    left: 27px;
+    top: 30px;
+    z-index: 1;
+    user-select: none;
+    
+}
+.inputStyle:hover{
+    border: 1px solid #C3C3C3;
+}
+.inputStyle:focus {
+    border: 2px solid #91CBF9;
+    transition: 0.3s ;
+}
+
+.inputStyle:focus ~ .labelAnima{
+    transition: 0.4s;
+    transform: translate(-8px, -25px) scale(0.71);
+}
+
+.inputStyle:focus+ .hidenBorder {
+    transition: 0.5s;
+    transform: scaleX(1);
+}
+
+/* Home Work tabs with animation */
+
+.container2
+{
+    display: flex;
+    justify-content: center;
+    height: 170px;
+    width: 720px;
+    background-color: #333333;
+    
+    
+}
+.border{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 95%;
+    height: 35%;
+    margin-left: 0;
+    background: #1E1E1E;
+}
+
+.selectText
+{
+    position: absolute;
+    top: 60px;
+    background: #414141;
+    height: 110%;
+    width: 100%;
+    
+}
+.butt1::before{
+    position: absolute;
+    content: "";
+    border-bottom: 4px solid #90C8F9;
+    width: 100%;
+    height: 95%;
+    left: 100%;
+    transition: 0.3s;
+}
+
+.butt2::before{
+    position: absolute;
+    content: "";
+    border-bottom: 4px solid #90C8F9;
+    width: 100%;
+    height: 95%;
+    left: -100%;
+    transition: 0.3s;
+}
+.butt2::after{
+    position: absolute;
+    content: "";
+    border-bottom: 4px solid #90C8F9;
+    width: 100%;
+    height: 95%;
+    left: 100%;
+    transition: 0.3s;
+}
+.butt2:focus::after{
+    left: 0;
+}
+
+.butt3::before{
+    position: absolute;
+    content: "";
+    border-bottom: 4px solid #90C8F9;
+    width: 100%;
+    height: 95%;
+    left: -100%;
+    transition: 0.3s;
+}
+.butt2:focus::before{
+    right: 0;
+}
+
+.butt:focus::before{
+    left: 0;
+}
+
+.butt:focus{
+    color: #90C8F9;
+}
+
+.itemOne, .itemOne2{
+    
+    color: #FFF;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.90px;
+    display: block;
+    top: 82px;
+    left: 40px;
+    height: 25px;
+    width: 350px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+
+.itemOne::before
+{
+    position: absolute;
+    content: "Item One";
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    left: -23%;
+}
+.itemOne2::before
+{
+    position: absolute;
+    content: "Item Three";
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    left: 105%;
+}
+.itemOne::after
+{
+    position: absolute;
+    content: "Item Two";
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    left: 105%;
+}
+
+ .butt1:focus ~ .itemOne::before{
+    transition: .1s;
+    left: 10%;
+}
+
+.butt2:focus ~ .itemOne::after{
+    transition: .2s;
+    left: 10%;
+}
+.butt3:focus ~ .itemOne2::before{
+    transition: .2s;
+    left: 10%;
+}
+
+/* Home Work sideBar animation */
+
+.label1{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    
+}
+
+.label1::before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-color: #979696;
+    border: 4px solid #979696;
+    border-radius: 100%;
+    top: -5px;
+    left: -4px;
+    opacity: 0;
+    
+}
+
+.butt_circle{
+    position: absolute;
+    top: 38px;
+    left: 59px;
+    z-index: 2;
+}
+.butt-arrow{
+    position: absolute;
+    top: 38px;
+    left: 11em;
+    z-index: 1;
+}
+.burger_menu, .burger_menu::before, .burger_menu::after  {
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    width: 20px;
+    top: 7px;
+    left: 5px;
+}
+
+.burger_menu::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.burger_menu::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.burger_arrow{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+#tab-1, #tab-2{
+    position: absolute;
+}
+input[name="tabs"]{
+      display: none;
+  }
+
+.container3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 740px;
+    height: 450px;
+    background-color: #333333;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.block_slider{
+    background-color: #424242;
+    height: 90%;
+    width: 0%;
+    margin-left: 25px;
+    transition: .3s;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.block_text{
+    background-color: #121212;
+    height: 90%;
+    width: 100%;
+    margin-right: 25px;
+    overflow: scroll;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+#tab-1:checked ~ .block_slider{
+    transition: 0.3s;
+    width: 40%;
+}
+
+.block_heder{
+    width: 100%;
+    height: 64px;
+    background-color: #90CAF9;
+    overflow: hidden;
+}
+
+
+
+.block_heder > span {
+    position: relative;
+    top: 21px;
+    left: 94px;
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+}
+
+#tab-1:checked + .butt_circle{
+    display: none;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    margin: 0.5em;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+.label1:hover::before {
+    opacity: 0.2;
+}
+
+.menu_block1 {
+    position: relative;
+    display: flex;
+    top: 63px;
+    flex-direction: column;
+    border-top: 2px solid #595959;
+    align-items: center;
+    padding: 10px;
+
+}
+.menu_block2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #595959;
+    align-items: center;
+    padding: 10px;
+}
+.link_decor {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 14pt;
+    width: 100%;
+    text-align: center;
+}
+
+.link_decor:hover{
+    background-color: #545454;
+}
