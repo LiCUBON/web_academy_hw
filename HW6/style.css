@@ -1,0 +1,87 @@
+.camelize{
+    width: 500px;
+    height: 260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 15pt;
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+    padding: 5px;
+    border: 3px solid #B63944;
+}
+
+.hw_6-1{
+    top: 15%;
+    position: relative;
+    width: 200px;
+    display: none;
+    
+}
+
+.hw_6-1-2{
+    top: 65%;
+    position: relative;
+    display: none;
+}
+
+.hw_6-2{
+    top: 15%;
+    left: 30%;
+    position: relative;
+    display: none;
+}
+.hw_6-3{
+    top: 15%;
+    left: 60%;
+    position: relative;
+    display: none;
+}
+.buttStyle{
+    background-color: transparent;
+    display: block;
+    border: 2px solid #9CDCDA;
+    border-radius: 50%;
+    width: 100px;
+    height: 30px;
+    color: tomato;
+    font-size: 9pt;
+}
+
+.hW6_task1, .hW6_task2, .hW6_task3{
+    position: absolute;
+    top: 15px;
+}
+.hW6_task1_v2{
+    position: absolute;
+    top: 145px;
+}
+
+
+.hW6_task2{
+    left: 30%;
+}
+.hW6_task3{
+    left: 60%;
+}
+
+.hW6_task1:focus ~ .hw_6-1 {
+    display: block;
+}
+.hW6_task1_v2:focus ~ .hw_6-1-2 {
+    display: block;
+}
+.hW6_task2:focus ~ .hw_6-2 {
+    display: block;
+}
+.hW6_task3:focus ~ .hw_6-3 {
+    display: block;
+}
+
+.buttStyle:hover{
+    background-color: #3AE2CE;
+    color: #fff;
+    font-weight: bold;
+}
