@@ -1,0 +1,105 @@
+.loader{
+    position: absolute;
+    top: 180px;
+    left: 26%;
+    width: 12px;
+    height: 12px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    border-top-color: #7BDCF0;
+    animation: 2s spin infinite linear;
+    display: none;
+    
+}
+
+@keyframes spin {
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        
+        transform: rotate(360deg);
+    }
+}
+
+.container{
+    width: 500px;
+    height: 390px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1E1E1E;
+    border: 3px solid #686869;
+}
+
+.entryField{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    height: 40px;
+    
+}
+
+#inputName{
+    height: 34px;
+    font-size: 13pt;
+}
+
+#nameBN{
+    text-align: center;
+    height: 40px;
+    outline: none; 
+    width: 60px;
+    
+}
+
+.massAut{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 281px;
+    left: 1%;
+    top: 25%;
+}
+
+#inputAthor{
+    height: 20px;
+}
+
+#subMBNT{
+    margin-top: 5px;
+    width: 120px;
+}
+#clearMBNT{
+    position: absolute;
+    width: 120px;
+    left: 35%;
+    top: 180px;
+}
+
+.chatText{
+    position: relative;
+    top: 25%;
+    margin: 5px;
+    height: 150px;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+.chatText >div{
+    font-size: 13pt;
+    text-indent: 5px;
+}
+
+.text{
+    border-bottom: 2px solid #686869;
+}
+
+.isMyMessage{
+    position: relative;
+    text-align: right;
+    padding-right: 5px;
+    font-weight: bolder;
+}
